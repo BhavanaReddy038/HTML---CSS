@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html><!--root element of the webpage-->
+    <head>
+        <title>Sample</title>    
+    </head>
+    <body>
+        <h1>INTRO to HTML</h1>
+    <pre>
+        <b>HTML (Hypertext Markup Language)</b> is the standard markup language for creating web pages and web applications.
+
+    <b>!DOCTYPE html:</b> Declaration defines that this document is an HTML5 document
+
+    <b>html tag:</b> Root element of the webpage
+
+    <b>head tag:</b> Contains metadata, links, CSS links, Scripts
+
+    <b>title tag:</b> Specifies a title for the html page, 
+            which is shown in the browser's title bar or in the page's tab
+
+    <b>body tag:</b> Contains the content of the webpage, such as text, images, links, etc.
+
+    <b>h1 tag:</b> Heading 1, used for main headings
+
+    <b>p tag:</b> defines a paragraph of text
+
+    </pre><hr>
+        <h2>Headings & paragraph in Html & Basics</h2>
+        <p>
+            About headings: consists 6 headings in HTML. Each heading is defined by a h1 to h6(defines the least important heading) tag.
+            Paragraphs are defined by the p element.
+            If we break the lines in paragraph tags they won't change in web page.
+            The browser will automatically remove any extra spaces and lines when the page is displayed:
+
+            HTML tags are not case sensitive 
+        <pre>
+          Headings Are Important: Search engines use the headings to index the structure and content of your web pages.
+          Users often skim a page by its headings. It is important to use headings to show the document structure.
+          h1: headings should be used for main headings, followed by h2 headings, then the less important h3, and so on.
+
+          For example:
+          h1 - Page title
+          h2 - Section titles
+          h3 - Sub-sections
+
+          Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+            Example: <h3 style="font-size:30px;">heading representing with font size by style attribute</h3>
+          Tip: Use only one h1 per page - it represents the main topic or title.
+
+          Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+        </pre>
+        </p><hr>
+        <h2 style="text-align:center;">HTML Elements & Attributes</h2>
+        <div>
+        <pre>
+              pre tag: retains spaces,line breaks,gaps within pre element tags
+              br: defines a line break
+              hr: defines a horizontal rule (a horizontal line)
+
+
+            HTML links are defined with the a(anchor) tag:
+            <a href="https://www.google.com">This is a link</a>
+
+            href (Hypertext reference) :The link's destination is specified in the href attribute.
+            All HTML elements can have attributes
+            Attributes provide additional information about elements
+            Attributes are always specified in the start tag
+            Attributes usually come in name/value pairs like: name="value"
+        
+            HTML images are defined with the <img> tag.
+            src: Source file, contains the path to the image to be displayed
+            alt: alternative text for an image, Displays text if the image cannot load
+            (sizes in pixels)width and height are attributes
+        
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Mvcr0QDsGXOx29cSBfXd6AHaE7?r=0&pid=Api&P=0&h=180" alt="W3Schools.com" width="75" height="96">
+
+            There are two ways to specify the URL in the src attribute:
+            1. Absolute URL: Contains the full path to the image, including the protocol (http:// or https://).
+                Links to an external image that is hosted on another website.
+
+            2. Relative URL: Contains the path relative to the current page(e.g., "images/picture.jpg").
+                Links to an image that is hosted on the same website.the URL does not include the domain name
+
+            Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+
+            img acts as a hyperlink when wrapped in an anchor tag. When the image is clicked, 
+            it will take the user to the specified URL.
+            Example:
+            <a href="https://www.youtube.com">
+               <img src="https://i.pinimg.com/736x/b9/e0/e1/b9e0e142f4287ce7e364f0a8a53659e1.jpg" alt="YouTube Logo" target="_blank" width="90" height="90">
+            </a>
+
+            <b>target="_blank":</b> opens the link in a new browser tab.
+            <b>HTML Links - The target Attribute</b>
+            By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+            The target attribute specifies where to open the linked document.
+            The target attribute can have one of the following values:
+                <b>_self</b> - Default. Opens the document in the same window/tab as it was clicked
+                <b>_blank</b> - Opens the document in a new window or tab
+                <b>_parent</b> - Opens the document in the parent frame
+                <b>_top</b> - Opens the document in the full body of the window
+
+            <b>Button as a Link</b>
+            To use an HTML button as a link, you have to add some JavaScript code.
+            JavaScript allows you to specify what happens at certain events, such as a click of a button:
+            <b>Example:</b>
+            1. Create a button element in your HTML code.
+            <button onclick="document.location='https://www.w3schools.com'" style="background-color:rgb(189, 23, 120)" target="_blank";>HTML Tutorial</button>
+    
+
+            <b>Lang Attribute:</b> You should always include the lang attribute inside the "html" tag,
+             to declare the language of the Web page. This is meant to assist search engines and browsers.
+             Country codes can also be added to the language code in the lang attribute
+             <!-- Example: <html lang="en-US"> -->
+
+            <b>title Attribute:</b> The title attribute defines extra information about an element.
+            Example:
+            <span title="I'm a tooltip">Hover over this paragraph to see the tooltip.</span>
+        </pre>
+        </div><hr>
+        <h2 style="text-align:center; background-color:tomato; color:black;">HTML Style Attribute</h2>
+        <div>
+        <pre>
+            <b>Style Attribute:</b> is used to add styles to an element, such as color, font, size, and more.
+            Eg:
+            <span style="color:red;">This is a red text.</span>
+            <span style="color:blue;">This is a blue text.</span>
+
+            The HTML style attribute has the following syntax: tagname style="property:value;"
+            The property is a CSS property. The value is a CSS value.
+            <b>set background color:</b> <span style="background-color:yellow;">This is a yellow background.</span>
+                <pre style="background-color:lightblue;">  
+                 lorem ipsum dolor sit amet ngdvchgvc hvceuyvcv kgbcvjvdvcydc
+                 uwfcxugcxuwgsxc uyvx xtvxytu ufcx ufwfx ufx uf csxuw fxc8  wcxt8cysv i8ytcvxy  vxiyqwcvdxvkgicw vufcx  dufgcxwc    
+                 cvyctx  w8cuxtv xghgxvtyxcgv    fxyhas gviycvqeyc igy3dvxgievxct1xv ity1fevdcve2xy it12edxvveiytdty tgydtvuvetv
+                 vcxufcxgfcqxutcr   wdtcwxcgcxywcxgfcxuytx  fcxtcwdxcwxgvwtyx ucxut cwxs xcfwctwccx uctxcwx
+                </pre>
+            <b>set color to text:</b> <span style="color:green;">The CSS color property defines the text color for an HTML element</span>
+            <b>set text size:</b><span style="font-size:20px;">The CSS font-size property defines the size of the font for an HTML element:</span>
+            <b>set font family:</b><span style="font-family:Arial, sans-serif;">The CSS font-family property defines the font for an HTML element:</span>
+            <b>set text alignment:</b><h3 style="text-align:right;">The CSS text-align property defines the horizontal alignment of text in an HTML element:</h3>
+            <b>set text decoration:</b><span style="text-decoration:underline;">The CSS text-decoration property defines the decoration added to text in an HTML element:</span>
+            <b>set text transform:</b><span style="text-transform:uppercase;">The CSS text-transform property defines the capitalization of text in an HTML element:</span>
+            <b>set text spacing:</b><span style="letter-spacing:5px;">The CSS letter-spacing property defines the space between characters in text in an HTML element:</span>
+            <b>set text shadow:</b><span style="text-shadow: 2px 2px 5px gray;">The CSS text-shadow property defines the shadow effect added to text in an HTML element:</span>
+        </pre>
+        </div><hr>
+        <div>
+        <pre>
+        <h3 style="border:2px solid Tomato;">HTML Text Formatting</h3>
+            HTML contains several elements for defining text with a special meaning.
+            HTML text formatting tags are used to define the style and appearance of text in an HTML document
+
+            <b>strong tag:</b> defines <strong>important text</strong>
+
+            <b>em tag:</b>defines emphasized text<em> A screen reader will pronounce
+             the words in em tag with an emphasis, using verbal stress.</em>
+
+            <b>b tag:</b> defines <b>bold</b> text
+
+            <b>i tag:</b> defines italic text, often used to indicate a <i>technical term,
+                      a phrase</i> from another language, a thought, a ship name, etc.
+
+            <b>mark tag:</b> defines <mark>marked/highlighted</mark> text
+
+            <b>small tag:</b> defines <small>smaller</small> text
+
+            <b>del tag:</b> defines <del>deleted</del> text
+
+            <b>ins tag:</b> defines <ins>inserted</ins> text
+
+            <b>sub tag:</b>defines <sub>subscripted</sub> text
+
+            <b>sup tag:</b>defines <sup>superscripted</sup> text
+        <hr>
+
+        <h3 style="border:2px solid DodgerBlue;">HTML Quotation and Citation Elements</h3>
+            <b>abbr tag:</b> Defines an abbreviation or acronym
+            Eg: <abbr title="World Health Organization">WHO</abbr> is an abbreviation for World Health Organization.
+            <b>address tag:</b> Defines contact information for the author/owner of a document
+            Eg: 
+            <address>Contact us at: <a href="mailto:info@example.com">info@example.com</a></address>
+            <address>
+                Written by John Doe.
+                Visit us at:
+                Example.com
+                Box 564, Disneyland
+                USA      
+            </address>
+            <b>bdo tag:</b> Defines the text direction
+            Eg: <bdo dir="rtl">This text will be displayed from right to left.</bdo>
+            <b>blockquote tag:</b> Defines a section that is quoted from another source
+            Eg: <blockquote cite="https://www.example.com">
+                This is a blockquote. It is used to indicate that the enclosed text is an extended quotation.
+                The source of the quotation can be specified using the cite attribute.
+                </blockquote>
+            <b>cite tag:</b> Defines the title of a work
+            Eg: <cite>The Great Gatsby</cite> is a novel written by F. Scott Fitzgerald.
+            <b>q tag:</b> Defines a short inline quotation
+            Eg: <span>Browsers normally insert quotation marks around the quotation:<q>This is a short inline quotation.</q></span>
+        </pre>
+        </div><hr>
+    <h2 style="background-color:purple; color:white; text-align:center;" >HTML Tables</h2>
+    <div>
+        <pre>
+            HTML tables are defined with the table tag.
+            Each table row is defined with the tr tag.
+            A table header is defined with the th tag.
+            A table data/cell is defined with the td tag.
+
+            Example:
+            <table border="1">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+            </table>
+
+        </pre>
+        <pre>
+            <h4>table tags</h4>
+            <b>caption tag:</b> Defines a table caption
+            <b>colgroup tag:</b> Specifies a group of one or more columns in a table for formatting
+            <b>col tag:</b> Specifies column properties for each column within a colgroup element
+            <b>thead tag:</b> Groups the header content in a table
+            <b>tbody tag:</b> Groups the body content in a table
+            <b>tfoot tag:</b> Groups the footer content in a table
+            <b>colspan attribute:</b> defines the number of columns a cell should span
+            <b>rowspan attribute:</b> defines the number of rows a cell should span
+        </pre>
+    <h3>Table Border</h3>
+        <pre>
+            The border attribute specifies whether the table cells should have borders or not.
+            The border attribute can have the following values:
+                <b>border="0"</b> - No borders (default)
+                <b>border="1"</b> - Borders are visible
+                <b>border="2"</b> - Borders are thicker
+            <a href="https://www.w3schools.com/html/html_table_borders.asp">Click here to learn more about HTML Table Borders</a>
+        </pre>
+    </div>
+    <h2 style="background-color:green; color:white; text-align:center;">HTML Lists</h2>
+    <div>
+        <pre>
+            <b>ul tag:</b>Defines an unordered list
+            <b>ol tag:</b>Defines an ordered list
+            <b>li tag:</b>Defines a list item
+            <b>dl tag:</b>Defines a description list
+            <b>dt tag:</b>Defines a term in a description list
+            <b>dd tag:</b>Describes the term in a description list
+
+            Example:
+            <span style="font-weight:bold; list-style-type:square;">Unordered List</span>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <b>list-style-type attribute:</b> Sets the list item marker
+            <b>disc:</b> Sets the list item marker to a bullet (default)
+            <b>circle:</b> Sets the list item marker to a circle
+            <b>square:</b> Sets the list item marker to a square
+            <b>none:</b> The list items will not be marked
+
+
+
+            <span style="font-weight:bold;">Ordered List</span>
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+            <b>type attribute of the oltag:</b> defines the type of the list item marker:
+            <b>type="1"</b>	The list items will be numbered with <ins>numbers (default)</ins>
+            <b>type="A"</b>	The list items will be numbered with <ins>uppercase letters</ins>
+            <b>type="a"</b>	The list items will be numbered with <ins>lowercase letters</ins>
+            <b>type="I"</b>	The list items will be numbered with <ins>uppercase roman numbers</ins>
+            <b>type="i"</b>	The list items will be numbered with <ins>lowercase roman numbers</ins>
+
+
+
+            <span style="font-weight:bold;">Description List</span>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- White cold drink</dd>
+            </dl>
+        </pre>
+    </div>
+    <h3 style="color:orange;">HTML Block & Inline Elements</h3>
+    <div>
+        <pre>
+            <b>Block-level elements:</b> Start on a new line and take up the full width available. 
+            Examples: div, p, h1, ul, ol, li, table, etc.
+
+            <b>Inline elements:</b> Do not start on a new line and only take up as much width as necessary. 
+            Examples: span, a, strong, em, img, etc.
+
+            Note: Some elements can be both block-level and inline, depending on their context and usage.
+             An inline element cannot contain a block-level element!
+        </pre>
+    </div>
+    <h3 style="color:orange;">HTML div, class, and id Attributes</h3>
+    <div>
+        <pre>
+            <b>div tag:</b> Defines a division or section in an HTML document
+            <b>class attribute:</b> Specifies one or more class names for an HTML element
+            <b>id attribute:</b> Specifies a unique id for an HTML element
+            <b>class vs id:</b> A class can be used on multiple elements, while an id must be unique within a page.
+            <b>span tag:</b> Defines a section in an HTML document, span element is an inline container 
+            used to mark up a part of a text, or a part of a document. 
+            span element has no required attributes, but style, class and id are common.
+            span example:
+            <span>My mother has <span style="color:blue;font-weight:bold;">blue</span>eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</span>
+            div Example:
+            <div class="container" id="main">
+                <p>This is a paragraph inside a div.</p>
+            </div>
+            class Example:
+            <div class="box">
+                <p>This is a paragraph inside a div with class "box".</p>
+            </div>
+            id Example:
+            <div id="header">
+                <p>This is a paragraph inside a div with id "header".</p>
+            </div>
+        </pre>
+    </div>
+    <h3 style="color:orange;">HTML Semantic Elements</h3>
+    <div>
+        <pre>
+            <b>Semantic elements:</b> clearly describe their meaning in a human- and machine-readable way.
+            Examples: header, footer, article, section, nav, aside, main, figure, figcaption, time, mark, etc.
+
+            <b>Non-semantic elements:</b> do not clearly describe their meaning. 
+            Examples: div, span, b, i, etc.
+
+            <b>header tag:</b> Defines a header for a document or section
+            <b>footer tag:</b> Defines a footer for a document or section
+            <b>article tag:</b> Defines an article
+            <b>section tag:</b> Defines a section in a document
+            <b>nav tag:</b> Defines navigation links
+            <b>aside tag:</b> Defines content aside from the page content
+            <b>main tag:</b> Specifies the main content of a document
+        </pre>
+    </div>
+    <h2 style="background-color:olive; color:white; text-align:center;">HTML Forms</h2>
+    <div>
+        <pre>
+            <b>form tag:</b> Defines an HTML form for user input
+            <b>input tag:</b> Defines an input control
+            <b>label tag:</b> Defines a label for an input element
+            <b>textarea tag:</b> Defines a multi-line text input control
+            <b>button tag:</b> Defines a clickable button
+            <b>select tag:</b> Defines a drop-down list
+            <b>option tag:</b> Defines an option in a drop-down list
+            <b>fieldset tag:</b> Groups related elements in a form
+            <b>legend tag:</b> Defines a caption for a fieldset
+
+            Example:
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </pre>
+    </div>
+    <h2 style="background-color:navy; color:white; text-align:center;">HTML CSS</h2>
+        <div>
+        <pre>
+            <b>CSS (Cascading Style Sheets):</b> is a style sheet language used for describing the presentation of a document written in HTML or XML.
+            CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+
+            <b>Inline CSS:</b> CSS can be added directly to an HTML element using the style attribute.
+            Example: <p style="color:blue;">This is a blue paragraph.</p>
+
+            <b>Internal CSS:</b> CSS can be included within a style tag in the head section of the HTML document.
+    
+            <b>External CSS:</b> CSS can be written in an external file with a ".css" extension and linked to the HTML document using the link tag.
+            Example:
+            <link rel="stylesheet" type="text/css" href="styles.css">
+        </pre>
+        </div>
+    </body>
+</html>
