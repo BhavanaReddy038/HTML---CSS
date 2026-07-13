@@ -1,0 +1,451 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#0d1b2a;
+}
+
+.logo{
+    color:#ffffff;
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:0;
+}
+
+nav ul{
+    display:flex;
+    margin-left:600px;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 18px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.4s;
+}
+
+nav ul li a:hover{
+    color:#ffb703;
+}
+
+nav button{
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.5s;
+    font-weight:bold ;
+}
+
+nav button:hover{
+    background:#ff1744;
+    transform:scale(1.05);
+}
+
+/* HERO SECTION */
+
+.Hero{
+    min-height:100vh;
+    background:linear-gradient(rgba(13,27,42,0.6),
+                rgba(13,27,42,0.6)),
+                url(https://starvacation.in/wp-content/uploads/2024/01/24-Must-Visit-Romantic-Spots-Across-India-in-2024.jpg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:50px;
+}
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.Hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+    
+}
+
+.Hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.Hero img{
+    margin-top:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.4);
+    max-width:100%;
+    max-height:120%;
+}
+
+.Hero button{
+    margin:25px 10px;
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.5s;
+}
+
+.Hero button:first-of-type{
+    background:#ff4d6d;
+    color:white;
+}
+
+.Hero button:last-of-type{
+    background:#ffb703;
+    color:black;
+}
+
+.Hero button:hover{
+    transform:translateY(-5px);
+}
+
+/* DESTINATIONS */
+
+.destinations{
+    padding:80px 8%;
+}
+.destinations h2{
+    font-size:30px;
+}
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:15px 0;
+}
+
+.card button{
+    background:#0d1b2a;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:25px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.card button:hover{
+    background:#ff4d6d;
+}
+
+/* WHY US */
+
+.why-us{
+    padding:80px 8%;
+}
+.why-us h2{
+    font-size:25px;
+}
+
+.why-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.box{
+    background:white;
+    width:260px;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 20px rgba(0,0,0,0.1);
+    transition:0.6s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+    background:#265689;
+    color:white;
+}
+
+/* TABLE */
+
+.packages{
+    padding:80px 8%;
+}
+
+.package h2{
+    font-size:25px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+th{
+    background:#0f2b49;
+    color:white;
+}
+
+th,
+td{
+    padding:18px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#d6ecff;
+}
+
+/* BOOKING FORM */
+
+.booking{
+    padding:80px 8%;
+    margin-bottom:50px;
+}
+
+form{
+    background:rgb(240, 235, 235);
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+label{
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0 20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    border:2px solid #2196f3;
+}
+
+form button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#0d1b2a;
+    color:white;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+form button:hover{
+    background:#ff4d6d;
+}
+
+/* REVIEWS */
+
+.reviews{
+    padding:80px 8%;
+    margin-bottom:50px;
+}
+
+.review{
+    max-width:900px;
+    margin:auto;
+    border-radius:20px;
+}
+
+/* GALLERY */
+
+.gallery{
+    margin-top:100px ;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.5s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+
+.footer{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.footer a{
+    color:#ffb703;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:990px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin:20px 0;
+    }
+
+    .Hero h1{
+        text-align: center;
+        background-position:center;
+        font-size:40px;
+    }
+
+    .Hero img{
+        width:100%;
+        height:auto;
+    }
+    .destination-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    }
+
+}
+
+@media(max-width:770px){
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        gap:20px;
+    }
+    
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .Hero h1{
+        font-size:32px;
+    }
+
+    .Hero p{
+        font-size:16px;
+    }
+    .destination-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px
+
+    }
+
+    form{
+        padding:25px;
+    }
+
+    table{
+        font-size:14px;
+    }
+}
+
+@media(max-width:580px){
+
+    .Hero h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+    .destinations{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:10px;
+    }
+
+    th,
+    td{
+        padding:10px;
+        font-size:12px;
+    }
+}
