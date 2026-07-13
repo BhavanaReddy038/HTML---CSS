@@ -80,7 +80,7 @@ nav button:hover{
     align-items:center;
     text-align:center;
     color:white;
-    padding:50px;
+    padding:5px;
 }
 .hero-content{
     display:flex;
@@ -106,7 +106,7 @@ nav button:hover{
     margin-top:30px;
     border-radius:20px;
     box-shadow:0 8px 25px rgba(0,0,0,0.4);
-    max-width:100%;
+    max-width:90%;
     max-height:120%;
 }
 
@@ -373,7 +373,7 @@ form button:hover{
 @media(max-width:990px){
 
     nav{
-        flex-direction: column;
+        flex-direction: row;
     }
 
     nav ul{
@@ -404,12 +404,17 @@ form button:hover{
     }
 
     nav ul{
-        gap:20px;
+        gap:15px;
     }
     
 
     nav ul li{
         margin:10px 0;
+    }
+    .hero-content{
+        flex-wrap: wrap;
+        flex-direction:row;
+        padding: 0%;
     }
 
     .Hero h1{
@@ -421,8 +426,7 @@ form button:hover{
     }
     .destination-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px
+    grid-template-columns:repeat(1,1fr);
 
     }
 
@@ -447,7 +451,6 @@ form button:hover{
     .destinations{
         display: grid;
         grid-template-columns:repeat(1,1fr);
-        gap:10px;
     }
 
     th,
@@ -457,18 +460,16 @@ form button:hover{
     }
 }
 @media(max-width:480px){
+    .hero-content{
+        font-size: small;
+    }
 
     .Hero h1{
-        font-size:28px;
+        font-size:18px;
     }
 
     h2{
-        font-size:28px;
-    }
-    .destinations{
-        display: grid;
-        grid-template-columns:repeat(1,1fr);
-        gap:10px;
+        font-size:18px;
     }
 
     th,
