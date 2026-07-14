@@ -7,7 +7,7 @@
 }
 
 body{
-    background:#e3aab6;
+    background:#f5eff0;
     color:#333;
 }
 
@@ -247,7 +247,7 @@ td{
 }
 
 tr{
-    background:#ebeee7;
+    background:#fef5fc;
 }
 
 tr:hover{
@@ -262,7 +262,7 @@ tr:hover{
 }
 
 form{
-    background:rgb(240, 235, 235);
+    background:rgb(245, 245, 250);
     max-width:700px;
     margin:auto;
     padding:40px;
@@ -316,7 +316,7 @@ form button:hover{
     max-width:900px;
     margin:auto;
     border-radius:20px;
-    background-color: #f8f7f7;
+    background-color: #f8f7f8;
 }
 
 /* GALLERY */
