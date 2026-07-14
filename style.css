@@ -373,7 +373,7 @@ form button:hover{
     transition:0.4s;
 }
 .footer-box a:hover{
-    color:#ffb703;
+    color:#5938ed;
     transform:translateX(8px);
 }
 
@@ -534,6 +534,16 @@ form button:hover{
     td{
         padding:10px;
         font-size:12px;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding:30%;
+        padding-top:10%;
+        padding-bottom:15%;
+        margin-right:-40px;
+        margin-left:-40px;
     }
 }
 @media(max-width:480px){
