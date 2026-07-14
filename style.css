@@ -346,26 +346,83 @@ form button:hover{
 /* FOOTER */
 
 .footer{
-    background:#0d1b2a;
-    background-size:cover;
+    background:linear-gradient(135deg,#0d1b2a,#1b263b);
     color:white;
-    text-align:center;
-    padding:40px 100px;
+    padding:60px 8% 25px;
+    margin-left:-120px;
+    margin-right:-120px;
+    margin-bottom:-140px;
     margin-top:50px;
-    margin-left:-40px;
-    margin-right:-40px;
-    margin-bottom:-100px;
-
 }
 
-.footer a{
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-box h3,
+.footer-box h4{
+    margin-bottom:20px;
     color:#ffb703;
-    text-decoration:none;
-    margin:0 10px;
 }
 
-.footer a:hover{
-    text-decoration:underline;
+.footer-box a{
+    line-height:1.8;
+    color:#d9d9d9;
+    transition:0.4s;
+}
+.footer-box a:hover{
+    color:#ffb703;
+    transform:translateX(8px);
+}
+
+/* Quick Links */
+
+.quick-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.quick-links a{
+    text-decoration:none;
+    color:#d9d9d9;
+    transition:0.4s;
+}
+
+.quick-links a:hover{
+    color:#ffb703;
+    transform:translateX(8px);
+}
+
+/* Social Links */
+
+.social-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:white;
+    transition:0.4s;
+}
+
+.social-links a:hover{
+    color:#ff4d6d;
+    transform:translateY(-5px);
+}
+
+.footer hr{
+    margin:40px 0 20px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.copyright{
+    text-align:center;
+    color:#d9d9d9;
 }
 
 /* RESPONSIVE DESIGN */
@@ -394,6 +451,13 @@ form button:hover{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:30px;
+    }
+    .footer{
+        padding-left:100px ;
+    }
+    .social-links{
+        display: flex;
+        flex-direction: row;
     }
 
 }
@@ -436,6 +500,19 @@ form button:hover{
 
     table{
         font-size:14px;
+    }
+    .footer{
+        text-align:center;
+    }
+
+    .quick-links{
+        align-items:center;
+    }
+
+    .social-links{
+        justify-content:center;
+        display: flex;
+        flex-direction: column;
     }
 }
 
