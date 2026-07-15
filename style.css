@@ -625,15 +625,12 @@ form button:hover{
     }
     .footer{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        padding:30%;
-        padding-left:50px;
-        padding-top:10%;
-        padding-bottom:15%;
-        margin-right:-40px;
-        margin-left:-40px;
+        flex-wrap: wrap;
+        padding: 40px 20px;
         text-align: center;
+        margin: 0;
+        gap: 20px;
     }
 }
 @media(max-width:480px){
@@ -648,7 +645,14 @@ form button:hover{
     h2{
         font-size:18px;
     }
-
+     .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 15px;
+        text-align: center;
+        margin: 0;
+        gap: 15px;
+    }
     th,
     td{
         padding:10px;
