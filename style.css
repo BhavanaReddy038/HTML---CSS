@@ -6,6 +6,12 @@
     scroll-behavior:smooth;
 }
 
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
 body{
     background:#f5eff0;
     color:#333;
@@ -305,21 +311,60 @@ form button:hover{
     background:#ff4d6d;
 }
 
-/* REVIEWS */
-
 .reviews{
     padding:80px 8%;
+}
+
+.reviews h2{
+    text-align:center;
+    font-size:35px;
     margin-bottom:50px;
+    color:#0d1b2a;
 }
 
-.review{
-    max-width:900px;
-    margin:auto;
-    border-radius:20px;
-    background-color: #f8f7f8;
+.review-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
-/* GALLERY */
+.review-card{
+    background:#fdfdfe;
+    width:320px;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.5s;
+}
+
+.review-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.review-card img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #eaf4ff;
+    margin-bottom:20px;
+}
+
+.review-card h3{
+    color:#0d1b2a;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.review-card p{
+    color:#666;
+    line-height:1.8;
+    font-style:italic;
+    font-size:15px;
+}
 
 .gallery{
     margin-top:100px ;
@@ -343,7 +388,6 @@ form button:hover{
     transform:scale(1.05);
 }
 
-/* FOOTER */
 
 .footer{
     background:linear-gradient(135deg,#0d1b2a,#1b263b);
@@ -353,6 +397,7 @@ form button:hover{
     margin-right:-120px;
     margin-bottom:-140px;
     margin-top:50px;
+    text-align: center;
 }
 
 .footer-container{
@@ -462,7 +507,7 @@ form button:hover{
 
 }
 
-@media(max-width:770px){
+@media(max-width:768px){
     nav{
         flex-direction: column;
     }
@@ -501,9 +546,52 @@ form button:hover{
     table{
         font-size:14px;
     }
-    .footer{
-        text-align:center;
+
+    .review-card{
+        width:100%;
+        max-width:350px;
     }
+
+    .reviews h2{
+        font-size:30px;
+    }
+
+    .footer-container{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:50px;
+        text-align:center;
+        padding:20px;
+    }
+
+    .footer-box{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .quick-links,
+    .social-links{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .footer-box p,
+    .footer-box a{
+        font-size:18px;
+    }
+
+    .footer hr{
+        margin:40px 0 20px;
+    }
+
+    .copyright{
+        text-align:center;
+        font-size:18px;
+    }
+}
 
     .quick-links{
         align-items:center;
@@ -514,7 +602,7 @@ form button:hover{
         display: flex;
         flex-direction: column;
     }
-}
+
 
 @media(max-width:600px){
 
@@ -540,10 +628,12 @@ form button:hover{
         flex-wrap: wrap;
         flex-direction: column;
         padding:30%;
+        padding-left:50px;
         padding-top:10%;
         padding-bottom:15%;
         margin-right:-40px;
         margin-left:-40px;
+        text-align: center;
     }
 }
 @media(max-width:480px){
