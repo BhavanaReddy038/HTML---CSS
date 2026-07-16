@@ -691,9 +691,6 @@ form button:hover{
 
     .quick-links,
     .social-links{
-        display:flex;
-        flex-direction:column;
-        gap:12px;
         align-items:center;
     }
 
