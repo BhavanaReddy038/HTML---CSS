@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;    
+}
+
+body{
+    background-color: black;
+    color: white;
+    margin-top:60px;
+}
+
+.navbar{
+    background-color: rgb(250, 249, 249);
+    height:60px;
+    width:100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0 48px;
+    position:fixed;
+    top:0;
+}
+
+.navbar .logo img{
+    height:45px;
+    width:180px;
+    margin:0 15px;
+}
+
+.navbar .links{
+    margin: 0 15px;
+    padding-right: 80px;
+    gap:16px;
+    display: flex;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: rgb(247, 89, 89);
+    text-decoration: underline;
+}
+
+#home,
+#contact, 
+#aboutus,
+#support{
+    height:100vh;
+}
